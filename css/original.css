@@ -1,0 +1,411 @@
+        /* Predefined style */
+
+
+        article>aside {
+            padding: 0;
+        }
+
+
+
+
+        /* To be implemented by students */
+
+
+        main article nav {
+            text-align: right;
+        }
+
+        article ul li {
+            margin: 1em 0;
+        }
+
+        article ul.music li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        article ul.football li {
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+        article ul.star li:not(:first-child):before {
+            content: "* ";
+        }
+
+        main a:visited {
+            color: #920b18;
+        }
+
+        /* 
+week 4
+*/
+
+
+
+        footer {
+            position: relative;
+        }
+
+        footer div.fb_iframe_widget {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        section>article>img {
+            float: left;
+            padding: 0 20px 20px 0;
+        }
+
+        section>article {
+            clear: both;
+            overflow: auto;
+        }
+
+        section>article>nav {
+            clear: both;
+        }
+
+
+        /* week 4 finished */
+        /* start week 5 */
+
+        body {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        header {
+            background-image: url("../img/backgroundTitleLarge.jpg");
+        }
+
+        header h1 {
+            width: 50%;
+        }
+
+        footer {
+            overflow: auto;
+            text-align: center;
+        }
+
+        footer address {
+            float: left;
+        }
+
+        footer p,
+        footer div.fb_iframe_widget {
+            float: right;
+            margin: 0;
+            margin-bottom: 10px;
+            clear: right;
+        }
+
+        footer div.fb_iframe_widget {
+            position: static;
+        }
+
+        #home #wrapper,
+        #famousInhabitants #wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: 20px;
+        }
+
+        #home #wrapper aside {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-template-rows: 4em auto;
+        }
+
+        #home #wrapper aside h2 {
+            grid-column: 1/-1;
+        }
+
+        #placesOfInterest #wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px
+        }
+
+        #placesOfInterest main nav {
+            display: none;
+        }
+
+        #famousInhabitants ul li {
+            list-style-type: none;
+        }
+
+        #famousInhabitants ul li::before {
+            content: "";
+        }
+
+        #famousInhabitants article {
+            overflow: auto;
+            clear: both;
+        }
+
+        #famousInhabitants article:nth-of-type(2n) ul li:first-child {
+            float: left;
+            padding-right: 20px;
+        }
+
+        #famousInhabitants article:nth-of-type(2n+1) ul li:first-child {
+            float: right;
+            padding-left: 20px;
+        }
+
+        #famousInhabitants aside ul li:NOT(:last-of-type) {
+            padding-bottom: 50px;
+            background-image: url("../img/swirl.png");
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        #famousInhabitants aside ul li {
+            padding-top: 10px;
+        }
+
+        /* * enhancing visitLeuven *
+-- general view --
+adding drop shadow to text
+h2 {
+    text-shadow:2px 2px 10px #394655;
+}
+
+rounding the corner of an element, background-color already defined for h1
+h1
+{ 
+    border-radius: 40px 0 0 0; OR
+    border-top-left-radius: 40px;
+}
+
+see line 208, add 20px to the left
+main {
+    padding: 20px 0 20px 20px;
+}
+
+sticky footer => see home.html
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+        }
+        
+#wrapper, #wrapperSticky
+{  ! adding id="wrapperSticky" to <main> on placesOfInterest.html is required - id="wrapper" is already used for other purposes
+    flex: 1;
+        }
+
+-- home --
+adding gradient background
+#home {
+    background-color: #fff;
+    background: linear-gradient(#E2E3E4,#394655);  
+}
+
+required for covering gradient with #fff & #E2E3E4
+#home #wrapper {
+    background-color: #fff;
+}
+
+#home #aside {
+    background-color: #E2E3E4;
+}
+
+-- famousInhabitants --
+adding drop shadow to an element
+#famousInhabitants
+{
+    box-shadow: 0px 1px 2px 5px #E2E3E4 inset; x y blur spread
+}
+
+-- placesOfInterest --
+Lea Verou http://lea.verou.me/css3patterns/#horizontal-stripes
+#placesOfInterest {
+background-color: #E2E3E4;
+background-image: linear-gradient(transparent 50%, #394655 50%);
+background-size: 4px 4px;
+}
+
+#placesOfInterest main {
+background-color: #fff;
+box-sizing:border-box;
+} */
+        /** week 8 - vertrekken vanaf grid V02 **/
+        /* zie http://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
+
+        .google-maps {
+            position: relative;
+            padding-bottom: 75%;
+            /* This is the aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* form trad*/
+
+        form {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=tel],
+        input[type=email],
+        input[type=date],
+        input[type=submit],
+        textarea,
+        select {
+            width: 100%;
+            border: 1px solid #476B9F;
+            border-radius: 3px;
+            padding: 2px;
+            margin: 0;
+            box-sizing: border-box;
+            /* alignment of boxes */
+            font-family: inherit;
+            font-size: 100%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #999;
+            margin-left: 0;
+            padding: .4em;
+            font-weight: bold;
+        }
+
+        text-area,
+        label {
+            vertical-align: top;
+            /* text in text-area displayed on top iso at bottom */
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border: 2px solid #476B9F;
+            outline: none;
+            /* remove browser default highlight */
+        }
+
+        /* responsive */
+
+        @media screen and (min-width: 600px) {
+
+            #col1,
+            #col2 {
+                display: block;
+            }
+
+            label,
+            input,
+            select,
+            textarea {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 850px) {
+
+            #col1,
+            #col2 {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            #col1 {
+                width: 59%;
+            }
+
+            #col2 {
+                width: 39%;
+                text-align: left;
+                margin-left: 2%;
+            }
+
+            form,
+            section {
+                width: 100%;
+            }
+
+            label {
+                display: inline-block;
+                width: 33%;
+                text-align: right;
+            }
+
+            input[type=text],
+            input[type=number],
+            input[type=tel],
+            input[type=email],
+            input[type=date],
+            input[type=submit],
+            textarea,
+            select {
+                width: 65%;
+                margin-right: 0;
+            }
+
+            input[type=submit] {
+                margin-left: 33.5%;
+            }
+        }
+
+        /* probeersels om figuurtjes ervoor te plaatsen - hier doe ik iets verkeerd maar wat ;)?
+
+
+a[href*="tel"]::before
+ { content:"";
+display:block;
+     background: url("../img/icon-phone.svg") no-repeat;
+     width: 5px;
+     height:auto;
+    
+}
+
+a[href*="mailto"]::before
+{
+    content:"";
+    display:block;
+    background: url(../img/icon-email.svg) no-repeat;
+    width: 5px;
+     height:auto;
+}
+
+section h2+p::before
+ {
+content:"";
+   display:block;
+   background: url"(../img/icon-location.svg)" no repeat; 
+     width: 5px;
+     height:auto;
+    
+}
+
+ */

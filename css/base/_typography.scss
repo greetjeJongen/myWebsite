@@ -1,0 +1,45 @@
+/* base */
+html {
+    font-family: $fontfamily-basic;
+    font-size: $fontsize-basic;
+}
+
+p {
+    line-height: $lineheight-medium;
+}
+
+/* headings */
+
+h1 {
+    font-family: $fontfamily-heading;
+    font-size: $fontsize-large;
+    line-height: $lineheight-large;
+}
+
+h2 {
+    font-family: $fontfamily-heading;
+    font-size: $fontsize-large;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+/* aside */
+
+aside {
+    font-size: $fontsize-small;
+    line-height: $lineheight-medium;
+
+}
+
+aside h2 {
+    font-size: $fontsize-medium;
+}
+
+/* navigation */
+
+header nav a:hover {
+    text-decoration: underline;
+}

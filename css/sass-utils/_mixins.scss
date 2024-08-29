@@ -1,0 +1,7 @@
+@mixin padding-container {
+    padding: $padding-container;
+}
+
+@mixin margin-top($value) {
+    margin: $value 0;
+}

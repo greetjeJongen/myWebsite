@@ -1,0 +1,12 @@
+main {
+    @include padding-container;
+}
+
+h2,
+h3 {
+    @include margin-top(15px);
+}
+
+p {
+    @include margin-top(10px);
+}

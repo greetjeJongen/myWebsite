@@ -1,0 +1,33 @@
+nav {
+    @include padding-container;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+
+    ul {
+        display: flex;
+    }
+
+
+    li {
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+    }
+
+
+    ul>li>a {
+        display: block;
+        padding: 30px 0;
+        box-sizing: border-box;
+        transition: background-color 2s;
+    }
+
+    ul>li>a:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+    }
+
+}

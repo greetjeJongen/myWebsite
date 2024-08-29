@@ -1,0 +1,19 @@
+header {
+    background-image: url("../img/backgroundTitleSmall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    height: 425px;
+
+    h1 {
+        @include padding-container;
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+
+}

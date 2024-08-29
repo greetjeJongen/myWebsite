@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Leuven</title>
+    <link rel="icon" href="img/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="contact">
+    <header>
+        <h1 lang="nl">Leuven: Eeuwenoud en Springlevend</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="placesOfInterest.html">Places of Interest</a>
+                </li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>
+                Contact <span>Leuven</span>
+            </h2>
+            <section>
+                <h3>Contact Leuven+ for a guided tour</h3>
+                <p><a href="http://www.leuven-plus.be/en">Leuven+</a> is an association of enthusiastic,
+                    experienced guides, certified by the Flanders Tourism Board. Not only do we offer a vast
+                    array of standard walks. We also develop bespoke visits and tours made to measure specific
+                    target groups such as persons with disabilities and schools. If you want to see Leuven
+                    through the eyes of a historical figure, check out our 'Take a walk with ...' formula.</p>
+
+                <p>Leuven+ offers tours in Dutch, English, French, German and Spanish. Feel free to <a
+                        href="http://www.leuven-plus.be/nl/overzicht-wandelingen">browse through our offer</a>
+                    or contact us for a customised tour.</p>
+            </section>
+
+
+            <form>
+                <!-- p niet strikt nodig, css moet dan wel aangepast worden ivm padding -->
+                <p>
+                    <label for="name">Name contact person* </label>
+                    <input id="name" size="60" maxlength="128" type="text" required>
+                </p>
+
+
+                <p>
+                    <label for="email">Email* </label>
+                    <input id="email" type="email" size="60" required>
+                </p>
+
+                <p>
+                    <label for="lang">Language* </label>
+                    <select id="lang" title="Language of guided tour?" required>
+                        <option value="1"> Dutch </option>
+                        <option value="2"> English</option>
+                        <option value="3"> French</option>
+                        <option value="4">German </option>
+                        <option value="5">Spanish </option>
+                    </select>
+
+
+                </p>
+
+                <p>
+                    <label for="dateTour">Date guided tour* </label>
+                    <input type="date" required>
+                </p>
+
+                <p>
+                    <label for="part">Number of participants* </label>
+                    <input type="number" min="1" max="20" step="1" value="" required>
+                </p>
+
+                <p>
+                    <label for="remarks">Remarks </label>
+                    <textarea id="remarks" cols="60" rows="10"></textarea>
+                </p>
+
+
+                <p><input type="submit" id="submit" value="Send"></p>
+            </form>
+            <section class="address">
+                <h3>Address</h3>
+                <p>Tourism Leuven<br> Naamsestraat 3<br> 3000 Leuven</p>
+                <address class="tel">T +32 16 20 30 20</address>
+                <address class="mail"><a href="mailto:tourism@leuven.be">tourism@leuven.be</a></address>
+            </section>
+            <section class="location">
+                <h3>Location</h3>
+                <!-- zie https://www.labnol.org/internet/embed-responsive-google-maps/28333/ of https://www.ostraining.com/blog/coding/responsive-google-maps/ -->
+                <!-- iframe: frameborder attribuut verwijderd -->
+
+                <div class="google-maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.4443994507837!2d4.698601689519099!3d50.87848485203141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d84a2ee1a9%3A0xdf9eb5e421065cd9!2sVisit+Leuven!5e0!3m2!1snl!2sbe!4v1508751108975"
+                        width="300" height="225" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </article>
+
+
+    </main>
+
+    <footer>
+        <address>Excercise Webontwikkeling 1 by Excercise Webontwikkeling 1 by student.name@abc.be.</address>
+        <p>Source: <a href="http://www.visitleuven.be/en">visitLeuven.be</a></p>
+    </footer>
+
+</body>
+
+</html>
